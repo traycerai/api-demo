@@ -62,6 +62,13 @@ To run the test suite:
 npm test
 ```
 
+## Curl to create user
+```bash
+ curl -X POST http://localhost:3000/api/users \
+  -H "Content-Type: application/json" \
+  -d '{"username": "dummy_user", "email": "dummy@example.com", "password": "dummy_password"}'
+```
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
